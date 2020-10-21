@@ -8,6 +8,8 @@ Welcome to the future.
 
 If you are not already living in the future then you can switch to Octopus Energy and get [£50 credit with this referral link](https://share.octopus.energy/storm-loris-49).
 
+You may also like [OctoPlot](https://github.com/jpsingleton/octoplot), a small command line tool that draws a graph of the Octopus Energy Agile pricing in your terminal.
+
 ## Examples
 
 ![octoyosu screenshot](octoyosu.png)
@@ -54,6 +56,16 @@ Download the [Octopus Agile tariff pricing data for your region from energy-stat
 Download your usage readings, e.g. [Recent 15-Minute Data from geo energynote](https://www.energynote.eu/services/).
 
 ![geo energynote Recent 15-Minute Data highlighted](energynote-download.png)
+
+The geo export file looks like this:
+
+```csv
+Date (yyyymmdd hh:mm),Cost (£),Extra Cost (£),Consumption (kWh),Carbon (kg)
+20201005 00:00,0.00216,0.00000,0.02000,0.01074
+20201005 00:15,0.00648,0.00000,0.06000,0.03222
+```
+
+Only columns 1 and 4 are used.
 
 If you download the usage readings from a smart meter, [OpenEnergyMonitor](https://openenergymonitor.org/) or a homemade [Raspberry Pi Electricity Monitor](https://unop.uk/raspberry-pi-electricity-monitor) etc. then you will probably need to tweak the code to match the CSV format.
 
