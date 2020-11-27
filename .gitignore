@@ -6,6 +6,7 @@
 *.csv
 
 .idea/
+.vscode/
 
 # User-specific files
 *.rsuser
